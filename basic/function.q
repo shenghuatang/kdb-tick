@@ -2,7 +2,9 @@ show {[x]x*x}5
 show {[x]x*x}[5]
 show {x*x}[5]
 
-show {[a;b] a2:a*a; b2:b*b;show `b2,b2; a2+b2+2*a*b}[20;4]  / binary function
+show {[a;b] show 1;show 2;a2:a*a; b2:b*b;show `b2,b2; a3:a2+b2+2*a*b}[20;4]  / binary function
+show "===================a2"
+
 / 576
 / show a2
 
