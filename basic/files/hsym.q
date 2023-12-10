@@ -1,3 +1,4 @@
+/ https://code.kx.com/q/ref/hsym/
 / hsym x     hsym[x]
 / Where x is a symbol atom or vector (since V3.1) returns the symbol/s prefixed with a colon if it does begin with one.
 d:hsym`c:/q/test.txt  
