@@ -1,9 +1,11 @@
+show `12=
 a:111b
 show a
 show 42=6*7
 show 1 2 3=2 2 4
 show "12"
 show `12`212
+
 show 1,2,3
 show 1 2 3
 / show 1 2 3 = 1 2 3 4

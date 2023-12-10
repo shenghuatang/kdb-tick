@@ -30,4 +30,16 @@ show {[xn] xn+(2-xn*xn)%2*xn}/[1.0]
 show {-2# x} 1 1
 show {sum -2 # x} 1 1
 show {x, sum -2#x}/[10;1 1]
+
+main:{
+     show "main";
+     0N!5+4;
+     show  "main1"
+ }
+
+main`;
+a:0N!2+3  / Print to console AND also return the value. Useful to insert for debugging.
+main 2;
+main 1
+show main
 \\
