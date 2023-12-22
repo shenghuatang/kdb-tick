@@ -1,3 +1,6 @@
+# book
+* https://github.com/psaris/funq
+
 # kdb+tick
 
 Files previously at code.kx.com/wsvn/kx/kdb+tick
