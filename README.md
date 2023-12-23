@@ -1,5 +1,11 @@
 # book
 * https://github.com/psaris/funq
+* https://github.com/psaris/qtips
+
+# video
+
+https://www.youtube.com/watch?v=W0vitYcobCg&list=PL9BW1Ta40f1bzG_ARexv252tWwS6n6de-
+
 
 # kdb+tick
 

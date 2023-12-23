@@ -4,7 +4,8 @@ show 2*d
 d=20
 show d
 
-show "When the domains of two dictionary maps are identical, performing a binary operation is also straightforward: do it value-with-value along the keys. For example, to add two dictionaries with a common list of keys, add their corresponding values"
+show "When the domains of two dictionary maps are identical, performing a binary operation is also straightforward: do it value-with-value along the keys. For example,
+ to add two dictionaries with a common list of keys, add their corresponding values"
 d1:`a`b`c!1 2 3
 d2:`a`b`c!10 20 30
 show d1+d2

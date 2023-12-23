@@ -20,5 +20,14 @@ show d
 / xyz| 321f
 / efg| "a"
 / ddd| `a
+show "=== display keys==="
+0N! key .Q.opt .z.x
+show key .Q.opt .z.x
+not `home in key .Q.opt .z.x
+if [not `schema in key .Q.opt .z.x;-1 "Usage:q dd.q -home dd";exit 1];
 
+.env.asset_class:first .Q.opt[.z.x]`schema
+show .env.asset_class
+.Q.opt[.z.x]
+.Q.opt .z.x
 \\
