@@ -1,3 +1,22 @@
+/
+
+ https://code.kx.com/q4m3/1_Q_Shock_and_Awe/ functions 101
+All built-in q operators and keywords are functions. The main differences between q’s functions and the ones we mortals can write are:
+
+The built-ins are written and optimized in one of the underlying languages k or C.
+Binary q functions can be used with infix notation – i.e., as operators – whereas ours must be used in prefix form.
+Functions in q correspond to “lambda expressions” or “anonymous functions” in other languages. This means that a function is a first-class value just like a long or float value – i.e., it acquires a name only once it is assigned to a variable.
+
+q is not purely functional
+
+Conceptually, a q function is a sequence of steps that produces an output result from an input value. Since q is not purely functional, 
+these rules can interact with the world by reaching outside the context of the function. Such actions are called side effects and should be carefully controlled
+
+Function definition is delimited by matching curly braces { and }. Immediately after the opening brace, the formal parameters
+ are names enclosed in square brackets [ and ] and separated by semi-colons. These parameters presumably appear in the body of the function, which follows the formal parameters and is a succession of expressions sequenced by semi-colons.
+
+\
+
 /q){[a;b] a2:a*a; b2:b*b; a2+b2+2*a*b}[20;4]  / binary function
 / 576
 show {[x]x*x}5   / you can call the function with arguments without bracket
@@ -18,6 +37,7 @@ show "===================a2"
 
 f:{2*x;}      / last statement is empty
 show f 10          / no result shown
+show "matches generic null"
 show (::)~f 10     / matches generic null
 /1b
 
