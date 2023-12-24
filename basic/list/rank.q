@@ -4,6 +4,21 @@
 An x \times y matrix is a list of x vectors of length y, all of the same type. A matrix has rank 2: it has two dimensions.
 
 The rank of an array is the depth to which it is rectangular.
+
+Rank and syntax¶
+The rank of a value is the number of
+
+arguments it evaluates, if it is a function
+indexes required to select an atom, if it is a list or dictionary
+A value is variadic if it can be used with more than one rank. All matrixes and some derived functions are variadic.
+
+
+q)+/[til 5]           / unary
+10
+q)+/[1000000;til 5]   / binary
+1000010
+Rank is a semantic property, and is independent of syntax. This is a ripe source of confusion
+
 \
 
 
