@@ -20,3 +20,9 @@
 /1b
 2000.01.01=2000.01m
 /1b
+ 
+a:12:00:00.000000000 / this is noon
+show a
+show "Or to advance a time by one microsecond (i.e., 1000 nanoseconds) add 1000."
+12:00:00.000000000+1000
+12:00:00.000000000=12*60*60*1000000000 / to verify that temporal values are indeed their underlying values, test for equality.

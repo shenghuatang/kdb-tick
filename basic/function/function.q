@@ -1,8 +1,8 @@
 /q){[a;b] a2:a*a; b2:b*b; a2+b2+2*a*b}[20;4]  / binary function
 / 576
-show {[x]x*x}5
-show {[x]x*x}[5]
-show {x*x}[5]
+show {[x]x*x}5   / you can call the function with arguments without bracket
+show {[x]x*x}[5]  / you can use bracket to call the function with arguments
+show {x*x}[5]   / use implicit parameters
 
 show {[a;b] show 1;show 2;a2:a*a; b2:b*b;show `b2;show b2; a3:a2+b2+2*a*b}[20;4]  / binary function
 d:{[a;b] show 1;show 2;a2:a*a; b2:b*b;show `b2;show b2; a3:a2+b2+2*a*b}[20;4]
