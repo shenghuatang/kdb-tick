@@ -1,5 +1,9 @@
 `long$1.0
+/1
 `float$1
+/1f
 `boolean$1
+1b
 `date$31
+2002.02.01
 \\
