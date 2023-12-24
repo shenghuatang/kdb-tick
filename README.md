@@ -1,9 +1,16 @@
+# resources
+* https://wiki.thalesians.com/index.php/Programming/Kdb/Resources
+
+
 # book
 * https://github.com/psaris/funq
 * https://github.com/psaris/qtips
 
 # video
+## Intro to kdb+ and q | Tutorial #1 | Introduction
+https://www.youtube.com/watch?v=8eoysfqO3UY&list=PLypX5sYuDqvrwBD2EMWadIMiTqJZmVsqm&index=1
 
+## kdb+ Database Maintenance
 https://www.youtube.com/watch?v=W0vitYcobCg&list=PL9BW1Ta40f1bzG_ARexv252tWwS6n6de-
 
 
