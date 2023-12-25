@@ -10,7 +10,62 @@ In mathematics and computer science, a higher-order function (HOF) is a function
 takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
 returns a function as its result.
 
+# Three kinds of iteration
+https://code.kx.com/q/wp/iterators/
 
+## Atomic iteration¶
+Many native q operators have iteration built into them. They are atomic. They apply to conforming arguments.
+
+## Mapping¶
+The map iterators apply a function across items of a list or lists. They do not burrow into a nested structure, but simply iterate across its top level. That is just what Each does.
+
+The map iterators:
+
+```
+    glyph	name	mnemonic keyword
+    '	    Each	each
+    \:	    Each Left	
+    /:	    Each Right	
+    ':	    Each Prior	prior
+    ':	    Each Parallel	peach
+    '	    Case
+
+
+
+q)x:("the";"quick";"brown";"fox")
+q)count[x]          / count x
+4
+q)count'[x]         / count each item of x
+3 5 5 3
+
+```
+
+
+## Accumulation¶
+In accumulator iterations the value is applied repeatedly, first to the entire (first) argument of the derived function, next to the result of that evaluation, and so on.
+
+The number of evaluations is determined according to the value’s rank.
+
+For a unary value, there are three forms:
+
+Converge: iterate until a result matches either the previous result or the original argument
+Do: iterate a specified number of times
+While: iterate until the result fails a test
+```
+The accumulators:
+
+glyph	name	mnemonic keyword
+\	Scan	scan
+/	Over	over
+
+
+q){x*x}\[0.1]                        / Converge
+0.1 0.01 0.0001 1e-08 1e-16 1e-32 1e-64 1e-128 1e-256 0
+q)5{x*x}\0.1                         / Do
+0.1 0.01 0.0001 1e-08 1e-16 1e-32
+q)(1e-6<){x*x}\0.1                   / While
+0.1 0.01 0.0001 1e-08
+```
 # basics
 Basics¶
 Iterators are higher-order unary operators: they take a single argument and return a derived function. The single argument is an applicable value: a list, dictionary, table, process handle, or function. The derived function iterates its normal application.
