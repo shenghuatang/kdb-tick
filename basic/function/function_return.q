@@ -9,11 +9,11 @@ application is terminated and the result is returned in the fourth expression. T
 A legitimate use of the if statement is to terminate execution with an exception. The following snippet would typically reside inside a function body.
 
 
-{
+
 ...
 if[a<50; '"Bad a"];
 ...
-}
+
 
 \
 f:{0N!"Begin"; a:x; b:y; :a*b; "End"}
