@@ -5,7 +5,11 @@ show a-:1
 /show 1 2 3 4 5@:2 3
 L:1 2 3
 show L,:4
-files: system "ls /tmp/"
+show "You can use the system keyword,only works if it's the first character on a line:"
+
+
+
+files: system "dir c:\\tmp\\" /"ls \tmp"
 show files   
 show "---------"
 show files where files like "*1.tmp"

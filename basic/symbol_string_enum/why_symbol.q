@@ -5,3 +5,5 @@ speed: accelerate lookups, comparisions (in,+<>) are faster for intergers than c
 
 Example: In trade data, the stock tickers or currency pairs are often stored as symbos.
 \
+
+show `$"dsfd7"
