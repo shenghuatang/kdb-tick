@@ -1,4 +1,5 @@
 /
+/ https://code.kx.com/q/basics/application/#rank-and-syntax
 / All arrays are lists. A list of atoms of the same type is a vector.
 
 An x \times y matrix is a list of x vectors of length y, all of the same type. A matrix has rank 2: it has two dimensions.
@@ -20,7 +21,7 @@ q)+/[1000000;til 5]   / binary
 Rank is a semantic property, and is independent of syntax. This is a ripe source of confusion
 
 \
-
++\[til 5]  
 
 depth:{$[type[x]<0; 
   0; 

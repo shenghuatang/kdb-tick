@@ -34,3 +34,9 @@ show trade:([]stock;price;amt:amount;time)
 /usb   8.19  800  09:04:01.000
 
 show meta trade
+show tables`.
+show tables `.
+tt::tables`.
+tt:tables`.
+show tt
+type (2+)
